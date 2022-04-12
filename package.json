@@ -4,7 +4,9 @@
   "description": "Test different implementations for json patch.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --passWithNoTests",
+    "test:wa": "jest --passWithNoTests --watchAll",
+    "test:w": "jest --passWithNoTests --watch"
   },
   "repository": {
     "type": "git",
