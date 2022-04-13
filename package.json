@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/jpbnetley/test-json-patch#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
     "jest": "^27.5.1"
   },
   "dependencies": {

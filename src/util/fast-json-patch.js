@@ -1,5 +1,5 @@
 import * as jsonpatch from 'fast-json-patch'
 
-const jsonpatch = (original, updated) => jsonpatch.compare(original, updated)
+const jsonpatchExec = (original, updated) => jsonpatch.compare(original, updated)
 
-export default jsonpatch
+export default jsonpatchExec
