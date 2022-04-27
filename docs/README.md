@@ -13,3 +13,7 @@ Test different implementations for json patch
 > TODO: Tweak tests to cater for different ops (IE if some send replace op and replace the whole array, or if some replace by index)
 
 <img src='./Current report.jpg'>
+
+## Running the project
+- install the dependencies: `npm i`
+- run tests: `npm test`
