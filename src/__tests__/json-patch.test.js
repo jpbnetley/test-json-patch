@@ -214,13 +214,11 @@ const executeTest = functionToTest => {
 
       const correct = [{ op: 'replace', path: '', value: { 0: 1 } }]
       const correct2 = [{ op: 'replace', path: '', value: [1] }]
-      const correctResults = [correct, correct2]
-      //https://codewithhugo.com/jest-array-object-match-contain/
-      expect(result).toEqual(
-        expect.arrayContaining(correctResults)
-      )
+      const correctResults = {...correct, ...correct2}
 
-      // expect(result).arrayContaining(correctResults)
+      expect(result).toEqual(
+        expect.objectContaining(correctResults)
+      )
     })
 
     // test(`For arrays, if data gets removed, replace operation is sent`, () => {
